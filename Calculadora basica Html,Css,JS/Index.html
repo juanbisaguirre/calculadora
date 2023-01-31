@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+
+    
+    <title>Calculadora</title>
+</head>
+<body>
+    <div id="appBG">
+        <form name="Calculadora">
+            <input type="textfield" name="ans" value="" autocomplete="off" readonly>
+
+            <input type="button" value="7" onclick="document.Calculadora.ans.value+='7'" class="gray">
+            <input type="button" value="8" onclick="document.Calculadora.ans.value+='8'" class="gray">
+            <input type="button" value="9" onclick="document.Calculadora.ans.value+='9'" class="gray">
+            <input type="button" value="+" onclick="document.Calculadora.ans.value+='+'" class="orange">
+            <br>
+            <input type="button" value="4" onclick="document.Calculadora.ans.value+='4'" class="gray">
+            <input type="button" value="5" onclick="document.Calculadora.ans.value+='5'" class="gray">
+            <input type="button" value="6" onclick="document.Calculadora.ans.value+='6'" class="gray">
+            <input type="button" value="-" onclick="document.Calculadora.ans.value+='-'" class="orange">
+            <br>
+            <input type="button" value="1" onclick="document.Calculadora.ans.value+='1'" class="gray">
+            <input type="button" value="2" onclick="document.Calculadora.ans.value+='2'" class="gray">
+            <input type="button" value="3" onclick="document.Calculadora.ans.value+='3'" class="gray">
+            <input type="button" value="X" onclick="document.Calculadora.ans.value+='*'" class="orange">
+            <br>
+            <input type="button" value="0" onclick="document.Calculadora.ans.value+='0'" class="gray">
+            <input type="reset" value="C">
+            <input type="button" value="=" onclick="document.Calculadora.ans.value=eval(document.Calculadora.ans.value)">
+            <input type="button" value="/" onclick="document.Calculadora.ans.value+='/'">
+
+
+        </form>
+
+    </div>
+    
+</body>
+</html>
